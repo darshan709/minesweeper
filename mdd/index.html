@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>Document</title>
+</head>
+    <p class="gameTitle">💣 MINESWEEPER 💣</p>
+    <div id="button_div" style="display: none;"  ><button class="btn1" onclick="obj.restart();">Restart</button>
+     <button onclick="obj.instrucation();" class="btn1">Insrtuctions</button> </div>
+    <div class="wrapper" id="instructionBox">
+        <div class="ruleBox">
+            
+            <p>Game Insrtuctions</p>
+            <ol class="rules">
+                <li>Click "Play" to begin the game.</li>
+                <li>Use the numbers to determine where you know a bomb is.</li>
+                <li>Avoid all the bombs and expose all the empty spaces to win Minesweeper.</li>
+            </ol>
+            <button class="btn" onclick="obj.main();">Start Game</button>
+        </div>
+    </div>
+    
+    <div id="show_result_Win" style="display: none;">You Win The Game</div>
+    <div id="show_result_Loss" style="display: none;">You Loss The Game</div>
+    <div id="board" style="display: none;"></div>
+   
+    
+   
+    <!--<span id="show_result_Win">You Win The Game</span>-->
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/j.js"></script>    
+</body>
+</html>

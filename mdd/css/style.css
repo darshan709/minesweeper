@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 50px;
+    font-family:  monospace;
+    text-align: center;
+  }
+
+.wrapper{
+  margin: 0 auto;
+}
+.gameTitle{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 50px;
+}
+
+.ruleBox{
+  width: 800px;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding-left: 80px;
+
+}
+
+p{
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px;
+  color: green;
+  margin-right: 50px;
+}
+.rules{
+  margin-top: 30px;
+  text-align: left;
+  font-size: 30px;
+}
+
+.btn{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  margin: 40px 100px 40px 0;
+  /* margin: 10px 10px 20px 20px; */
+  font-size: 20px;
+}
+.btn1{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  /* margin: 40px 100px 40px 0; */
+  margin: 10px 10px 20px 20px;
+  font-size: 20px;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: green;
+}
+.btn1:hover{
+  cursor: pointer;
+  background-color: green;
+}
+#board {
+    border: 1px solid #333;
+    display: inline-block;
+  }
+  
+  .row {
+    font-size: 0px;
+  }
+  
+.col {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   background-color: #eee;
+   border-right: 1px solid white;
+   border-bottom: 1px solid white;
+   vertical-align: top;
+   color: black;
+   font-size: 20px;
+   line-height: 50px;
+   transition: all 1.0s;
+   border-radius: 8px;
+  }
+
+/* .col.hidden.mine
+{
+  background-color: red;
+} */
+
+.col.hidden {
+    background-color: #67696baf;
+    cursor: pointer;
+  }
+
+.col.hidden:hover{
+  background-color: #eee;
+}
+
+.row:last-child .col{
+  border-bottom: none;
+}
+
+.row .col:last-child{
+  border-right: none;
+}
+
+/* .boom_image{
+  background-image: url(img/boom.jpg);
+  width: 50px;
+  height: 50px;
+  color: black;
+} */
+
+#show_result_Win{background-color: rgb(66, 211, 90);margin: 1px 1px 1px 1px;font-size: larger;}
+#show_result_Loss{background-color: rgb(221, 66, 66);margin: 1px 1px 1px 1px;font-size: larger;}
+/* #button_div{float: right; clear: both;} */
